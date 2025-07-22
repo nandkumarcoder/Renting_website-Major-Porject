@@ -72,11 +72,19 @@ GoRent addresses the inefficiencies of traditional, offline rental systems by of
 *(Replace these with actual screenshots from your running application)*
 
 - Home Page
+  <img width="770" height="756" alt="image" src="https://github.com/user-attachments/assets/548c441a-11e4-4b8d-8eec-8d82df41a400" />
 - Login & Signup
+  <img width="773" height="672" alt="image" src="https://github.com/user-attachments/assets/fdb95016-8ffd-40c8-9c15-c7fc8696d7d5" />
+
 - Item List & Detail View
+  <img width="725" height="682" alt="image" src="https://github.com/user-attachments/assets/44b37f0c-e83d-42d1-a095-ddd2c79493f7" />
+
 - Checkout & Payment
+  <img width="731" height="597" alt="image" src="https://github.com/user-attachments/assets/1e4ae88c-fabd-4030-b873-65fc746f7023" />
+
 - User Dashboard
-- Owner’s Listing / Upload Item View
+  <img width="716" height="563" alt="image" src="https://github.com/user-attachments/assets/619e4639-de80-4d3e-a55d-ad0e160cff2f" />
+
 
 ## Getting Started
 
