@@ -1,4 +1,3 @@
-Here is a **README.md** draft for the GoRent project, based on the provided project report. You can copy and use this markdown file directly for your repository.
 
 # GoRent: A Smart Rental Management Platform
 
