@@ -28,8 +28,16 @@ const completedRentals = [
   {
     id: "1",
     productName: "Mountain Bike",
+    product: {
+      id: 101,
+      name: "Mountain Bike",
+      description: "Trek Fuel EX 8 29er Full Suspension",
+      image: "/placeholder.svg?height=120&width=120",
+    },
     price: 45,
     period: "day",
+    startDate: "2023-08-01",
+    endDate: "2023-08-04",
     totalDays: 3,
     rating: null, // No review yet
     role: "renting", // User was renting this item
@@ -39,8 +47,16 @@ const completedRentals = [
   {
     id: "2",
     productName: "DSLR Camera",
+    product: {
+      id: 102,
+      name: "DSLR Camera",
+      description: "Canon EOS 5D Mark IV with 24-70mm lens",
+      image: "/placeholder.svg?height=120&width=120",
+    },
     price: 75,
     period: "day",
+    startDate: "2023-08-05",
+    endDate: "2023-08-10",
     totalDays: 5,
     rating: 4, // Existing review
     role: "renting",
@@ -50,8 +66,16 @@ const completedRentals = [
   {
     id: "3",
     productName: "DJ Equipment",
+    product: {
+      id: 104,
+      name: "DJ Equipment",
+      description: "Complete DJ setup with mixer and speakers",
+      image: "/placeholder.svg?height=120&width=120",
+    },
     price: 100,
     period: "day",
+    startDate: "2023-08-08",
+    endDate: "2023-08-10",
     totalDays: 2,
     rating: null, // No review yet
     role: "lending", // User was lending this item
