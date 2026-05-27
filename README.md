@@ -90,33 +90,54 @@ GoRent addresses the inefficiencies of traditional, offline rental systems by of
 
 ### Prerequisites
 
-- Node.js & npm
-- MongoDB (Atlas recommended)
-- Yarn (optional)
+- Node.js (v18+ recommended) & npm
+- MongoDB (local database or MongoDB Atlas cluster)
+- Clerk account (for user authentication)
+
+### Repository Setup
+
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/nandkumarcoder/Renting_website-Major-Porject.git
+cd Renting_website-Major-Porject
+```
+
+### Environment Configuration
+
+#### 1. Server Environment Setup (`server/.env`)
+Create a `.env` file in the `server` directory:
+```env
+PORT=5000
+MONGODB_URI=your_mongodb_connection_string
+CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+```
+
+#### 2. Client Environment Setup (`client/.env.local`)
+Create a `.env.local` file in the `client` directory:
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+NEXT_PUBLIC_API_URL=http://localhost:5000
+FRONTEND_URL=http://localhost:3000
+MONGODB_URI=your_mongodb_connection_string
+```
 
 ### Running Locally
 
 ```bash
-# Clone the repo
-git clone https://github.com/your-org/GoRent.git
-cd GoRent
-
-# Install server dependencies
+# Install server dependencies and run the backend
 cd server
 npm install
-
-# Install client dependencies
-cd ../client
-npm install
-
-# Start backend (from server/)
 npm run dev
 
-# Start frontend (from client/)
+# Open a new terminal, install client dependencies and run the frontend
+cd client
+npm install --legacy-peer-deps
 npm run dev
 ```
+- *Note: Using `--legacy-peer-deps` is recommended when installing client packages to automatically resolve the React 19 peer dependencies alignment for `react-day-picker`.*
 
-- Configure environment variables as needed (MongoDB URI, JWT secrets, Stripe keys).
 
 ## Testing
 
